@@ -1,0 +1,15 @@
+.nav-item a {
+    color: #222;
+}
+
+.dropdown-bordered-items {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#navbarmenu ul li a :hover {
+    color: #222;
+}
