@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 .nav-item a {
     color: #222;
 }
@@ -10,3 +14,34 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.profile-image {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.skills::-webkit-scrollbar-thumb {
+    height: 8px;
+}
+
+.skills::-webkit-scrollbar {
+    background: rgb(255, 255, 255);
+}
+
+.see-more-arrows {
+    right: 35px;/*These arrows were seperate classes but they look just fine with the axact same adjustments, so I combined them*/
+    top: 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+                        
+.skills {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
