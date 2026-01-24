@@ -97,6 +97,8 @@
     text-decoration: underline;
 }
 
-.mobile-dropdown-border-item {
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
+@media(max-width: 992px) {
+    .mobile-dropdown-border-item {
+        border-top: 2px solid rgba(0, 0, 0, 0.0.5);
+    }
 }
