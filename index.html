@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e067495424.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
     <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Personal Portfolio</title>
+    <title>Personal Portfolio: James York</title>
 </head>
-<body>
+    <body>
         <nav class="navbar navbar-expand-md p-3 navbar-light bg-light">
             <div class="container-fluid">
-                <p class="navbar-item navbar-brand">James York</p>
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
+                <a class="navbar-brand" href="#" id="top"><span class="d-none d-md-inline">Personal Portfolio |</span> James York</a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation dropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -28,81 +27,111 @@
             </div>
         </nav>
 
-    <div class="container-fluid">
-        <div class="row">
-            <h4 class="bg-light" id="about">About</h4>
-            <img src="https://picsum.photos/300/300" class="profile-image" alt="Image of James York">
-            <p class="text-secondary">My name is James York, and I am currently taking <a href="https://www.altcademy.com">Altcademy</a>'s full stack web development course. I enjoy creating high quality webpages, and am looking forwards to a long career in web development.</p>
-        </div>
-
-        <div class="row">
-            <div class="container-fluid" id="skills">
-                <h4>Skills</h4>
-                <div class="skills d-md-flex flex-nowrap">
-                    <div class="skill-item col-12 col-md-4 p-md-3 text-center h-100" id="skill-html">
-                        <i class="fa-brands fa-html5 fa-4x"></i>
-                        <h6 class="pb-3"><b>HTML</b></h6>
-                        <p>Strong understanding of semantic HTML and accessible structure</p>
-                    </div>
-
-                    <div class="skill-item col-12 col-md-4 p-md-3 text-center h-100">
-                        <i class="fa-brands fa-css3-alt fa-4x"></i>
-                        <h6 class="pb-3"><b>CSS</b></h6>
-                        <p>Comfortable creating responsive layouts and page design.</p>
-                    </div>
-
-                    <div class="skill-item col-12 col-md-4 p-md-3 text-center h-100">
-                        <i class="fa-brands fa-bootstrap fa-4x"></i>
-                        <h6 class="pb-3"><b>Bootstrap</b></h6>
-                        <p>Experience in making responsive designs using Bootstrap 3, 4, and 5.</p> 
-                    </div>
-
-                        <a href="#skill-diligence" class="position-relative see-more-arrows"><i class="fa-solid fa-arrow-right fa-2x"></i></a>
-
-                    <div class="skill-item col-12 col-md-4 p-md-3 text-center h-100">
-                        <i class="fa-solid fa-comments fa-4x"></i>
-                        <h6 class="pb-3"><b>Communication</b></h6>
-                        <p>Clear communication and efficient collaboration within team projects.</p>
-                    </div>
-
-                    <div class="skill-item col-12 col-md-4 p-md-3 text-center h-100" id="skill-diligence">
-                        <i class="fa-solid fa-clock fa-4x"></i>
-                        <h6 class="pb-3"><b>Diligence</b></h6>
-                        <p>Extremely dedicated to consistant learning and improvement.</p>
-                    </div>
-
-                        <a href="#skill-html" class="see-more-arrows position-relative"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
-                    
+        <section id="about">    
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center my-5 pb-5 mx-4">
+                    <h4 class="ps-1 ps-md-5 pb-4"><b>About</b></h4>
+                    <img src="https://picsum.photos/200/200" class="profile-image rounded-circle pb-4 pt-3 pt-lg-0" alt="Image of James York"><!--Placeholder is an oval (which isn't intended) but I will leave it as it is because when I do add a real headshot, the file will be a perfect square-->
+                    <p class="text-secondary col-12 ps-lg-5 about-description text-lg-center">My name is James York, and I am a student studying full stack web development at <a href="https://www.altcademy.com">altcademy.com</a>. I enjoy turning ideas into high quality, accessible user experiences, and I'm currently working toward a long-term career in web development.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div>
-                <h4 class="bg-light" id="projects">Projects</h4>
-                <ul class="text-secondary list-unstyled">
-                    <li>You can find a clone I made of <a href="https://newsweek.com">Newsweek</a> with boostrap v3.3.6 <a href="https://inspiring-chaja-63ab8a.netlify.app/">here</a>.</li>
-                    <li>You can find a clone I made of <a href="https://news.airbnb.com/">Airbnb Newsroom</a> using boostrap 4.6.0 <a href="https://gilded-choux-8b1b6a.netlify.app/">here</a>.</li>                    
-                </ul>
+        <section id="skills">
+            <div class="container-fluid pb-5 px-5">
+                <div class="row">
+                    <h4 class="ps-1 ps-md-5 pb-4"><b>Skills</b></h4>
+                    <div class="skills d-flex flex-nowrap">
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
+                            <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>HTML</b></h6>
+                            <p>Writing semantic, well structured HTML that excels in accessibility</p>
+                        </div>
+
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                            <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>CSS</b></h6>
+                            <p>Building polished page designs using CSS</p>
+                        </div>
+
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                            <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>Bootstrap</b></h6>
+                            <p>Creating responsive webpages using Bootstrap 3, 4, and 5</p> 
+                        </div>
+
+                        <a href="#skill-diligence" aria-label="Click to view more skills" class="position-relative see-more-arrows d-none d-md-block"><i class="fa-solid fa-arrow-right fa-2x" aria-hidden="true"></i></a>
+
+                        
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                            <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>Git & Github</b></h6>
+                            <p>Version control with Git and collaboration with GitHub</p>                    
+                        </div>
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                            <i class="fa-solid fa-comments fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>Communication</b></h6>
+                            <p>Communicating clearly to maintain smooth collaboration on team projects</p>
+                        </div>
+
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-diligence">
+                            <i class="fa-solid fa-clock fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>Diligence</b></h6>
+                            <p>Consistently learning, and working to improve my web development skills</p>
+                        </div>
+
+                        <a href="#skill-html" class="see-more-arrows position-relative d-none d-md-block"><i class="fa-solid fa-arrow-left fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div>
-                <h4 class="bg-light" id="contact">You can contact me at:</h4>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
+        <section id="projects">    
+            <div class="container-fluid px-5">
+                <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>                      
+                <article>
+                    <div class="row mb-5 p-0 p-lg-5 bg-light">
+                        <div class="col-12 col-md-6 order-2 order-md-1">
+                            <h5 class="text-center projects-title"><a href="https://gilded-choux-8b1b6a.netlify.app/"><b class="text-dark">Airbnb News Clone</b></a></h5>
+                            <p class="text-secondary">This is a mobile responsive clone of the <a class="text-dark" href="https://news.airbnb.com/">Airbnb Newsroom</a> made with Bootstrap 4.6. This webpage features article listings, horizontally scrollable sections, and a multi section footer.</p>
+                        </div>
+                        <div class="col-12 col-md-6 order-1 order-md-2">
+                            <a href="https://gilded-choux-8b1b6a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article>    
+                    <div class="row my-5 p-0 p-lg-5 bg-light">
+                        <div class="col-12 col-md-6 order-2 order-md-1">
+                            <h5 class="text-center projects-title"><a href="https://inspiring-chaja-63ab8a.netlify.app/"><b class="text-dark">Newsweek Clone</b></a></h5>
+                            <p class="text-secondary">A project done as part of Altcademy's Full Stack Web Development class. This is a clone of of <a class="text-dark" href="https://www.newsweek.com/">Newsweek</a>. This project demonstrates a mobile responsive design built using Bootstrap 3. It features sidebar content organization, and a hierarchy of articles: one main, and two sub articles.</p>
+                        </div>
+                        <div class="col-12 col-md-6 order-1 order-md-2">
+                            <a href="https://inspiring-chaja-63ab8a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/newsweek-clone.png" alt="Thumbnail image of my Newsweek clone"></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
 
+        <section id="contact">    
+                <div class="container-fluid py-5 bg-light">
+                    <h5 class="ps-4 ps-md-5 pb-4"><b>Get in touch</b></h5>
+                    <ul class="list-unstyled gap-4 contact-info d-flex ms-5 ms-md-5">
+                        <li><a href="mailto:jwyork2008@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James,"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
+                        <li><a href="https://github.com/james-york2008"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
 
-    <footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+            <a class="ms-5" id="back-to-top" href="#top">Back to top</a>
 
-    </footer>
-</body>
+            <p class="text-secondary bg-light me-5 text-end"><small>&copy; 2026 James York. All rights reserved</small></p>
+
+        </footer>
+    </body>
 </html>
