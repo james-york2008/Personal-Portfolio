@@ -37,29 +37,52 @@
             </div>
         </section>
 
-        <section id="skills">
-            <div class="container-fluid pb-5 px-5" id="dynamicSkills">
+        <section>
+            <div class="container-fluid pb-5 mb-md-5 px-5" id="skills">
                 <div class="row">
                     <h4 class="ps-1 ps-md-5 pb-4"><b>Skills</b></h4>
-                    <div class="skills d-flex flex-wrap">
+                    <div class="skills d-flex flex-md-wrap">
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3" >
                             <i class="fa-brands fa-react fa-4x" aria-hidden="true"></i>
                             <h6 class="pb-3"><b>ReactJS</b></h6>
                             <p>Building scalable, component driven user interfaces with React; utilizing hooks, state management, and reusable artchitecture</p>
                         </div>
+
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
                             <i class="fa-brands fa-js fa-4x" aria-hidden="true"></i>
                             <h6 class="pb-3"><b>Javascript</b></h6>
                             <p>Creating dynamic web applications with ES6+, including asynchronous programming, API integration, and DOM manipulation</p>
                         </div>
+
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                             <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
                             <h6 class="pb-3"><b>HTML</b></h6>
                             <p>Writing semantic, accessible, standard compliant markup designed for scalability, and search engine optimization</p>
-                        </div>              
+                        </div>
+
+                        <div class="d-flex d-md-none" id="dynamicSkills">  <!--DYNAMIC RENDERING ON MD VIEWPORT-->
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                                <h6 class="pb-3"><b>CSS</b></h6>
+                                <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
+                            </div>
+
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                                <h6 class="pb-3"><b>Bootstrap</b></h6>
+                                <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
+                            </div>
+                                            
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                                <h6 class="pb-3"><b>Git & Github</b></h6>
+                                <p>Maintaining version control workflows with Git including beanching strategies pull requests and collaborative development on Github</p>                    
+                            </div>
+                        </div>            
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-sm d-none d-lg-flex" id="seeMoreSkills">See more</button>
+
+            <button class="btn btn-secondary btn-sm d-none d-md-flex" id="toggleMoreSkills">See more</button>                    
             </div>
         </section>
 
@@ -72,6 +95,7 @@
                             <h5 class="text-center projects-title"><a href="https://james-york2008.github.io/stockPortfolio/"><b class="text-dark">Stock Portfolio</b></a></h5>
                             <p class="text-secondary">A dynamic stock portfolio management site built with ReactJS. This project features state management, controlled form inputs, and real time value calculation. On this site, users can add, edit, and remove stocks and the total values will automatically be updated.</p>
                         </div>
+
                         <div class="col-12 col-md-6 order-1 order-md-2">
                             <a href="https://james-york2008.github.io/stockPortfolio/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/stockPortfolio.jpeg" alt="Thumbnail image of my stock portfolio webpage"></a>
                         </div>
@@ -84,6 +108,7 @@
                             <h5 class="text-center projects-title"><a href="https://gilded-choux-8b1b6a.netlify.app/"><b class="text-dark">Airbnb News Clone</b></a></h5>
                             <p class="text-secondary">This is a mobile responsive clone of the <a class="text-dark" href="https://news.airbnb.com/">Airbnb Newsroom</a> made with Bootstrap v4.6.0. This webpage features article listings, horizontally scrollable sections, and a multi section footer.</p>
                         </div>
+
                         <div class="col-12 col-md-6 order-1 order-md-2">
                             <a href="https://gilded-choux-8b1b6a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
                         </div>
@@ -96,6 +121,7 @@
                             <h5 class="text-center projects-title"><a href="https://inspiring-chaja-63ab8a.netlify.app/"><b class="text-dark">Newsweek Clone</b></a></h5>
                             <p class="text-secondary">A project done as part of Altcademy's Full Stack Web Development class. This is a clone of <a class="text-dark" href="https://www.newsweek.com/">Newsweek</a>. This project demonstrates a mobile responsive design built using Bootstrap v3.3.6. It features sidebar content organization, and a hierarchy of articles: one main, and two sub articles.</p>
                         </div>
+                        
                         <div class="col-12 col-md-6 order-1 order-md-2">
                             <a href="https://inspiring-chaja-63ab8a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/newsweek-clone.png" alt="Thumbnail image of my Newsweek clone"></a>
                         </div>
