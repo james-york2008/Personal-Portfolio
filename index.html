@@ -30,8 +30,8 @@
         <section id="about">    
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center my-5 pb-5 mx-4">
-                    <h4 class="ps-1 ps-md-5 pb-4"><b>About</b></h4>
-                    <img src="https://picsum.photos/200/200" class="profile-image rounded-circle pb-4 pt-3 pt-lg-0" alt="Image of James York">
+                    <h4 class="ps-1 ps-md-5 pb-3"><b>About</b></h4>
+                    <img loading="lazy" src="https://picsum.photos/200/200" class="profile-image rounded-circle pb-3 pt-3 pt-lg-0" alt="Image of James York">
                     <p class="text-secondary col-12 ps-lg-5 about-description text-lg-center">My name is James York, and I am a student studying full stack web development at <a href="https://www.altcademy.com">altcademy.com</a>. I enjoy turning ideas into high quality, accessible user experiences, and I'm currently working toward a long-term career in web development.</p>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3" >
                             <i class="fa-brands fa-react fa-4x" aria-hidden="true"></i>
                             <h6 class="pb-3"><b>ReactJS</b></h6>
-                            <p>Building scalable, component driven user interfaces with React; utilizing hooks, state management, and reusable artchitecture</p>
+                            <p>Building scalable, component driven user interfaces with React that utilize hooks, and state management</p>
                         </div>
 
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
@@ -58,12 +58,11 @@
                             <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
                             <h6 class="pb-3"><b>HTML</b></h6>
                             <p>Writing semantic, accessible, standard compliant markup designed for scalability, and search engine optimization</p>
-                        </div>
-
-                        <div class="d-flex d-md-none" id="dynamicSkills">  <!--DYNAMIC RENDERING ON MD VIEWPORT-->
+                        </div>     
+                        <div class="d-flex d-md-none">  <!--Mobile display of dynamic skills-->
                             <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                 <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
-                                <h6 class="pb-3"><b>CSS</b></h6>
+                                <h6 class="pb-5"><b>CSS</b></h6>
                                 <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
                             </div>
 
@@ -76,13 +75,34 @@
                             <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                 <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
                                 <h6 class="pb-3"><b>Git & Github</b></h6>
-                                <p>Maintaining version control workflows with Git including beanching strategies pull requests and collaborative development on Github</p>                    
-                            </div>
-                        </div>            
+                                <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on Github</p>                    
+                            </div>                          
+                        </div>
                     </div>
                 </div>
 
-            <button class="btn btn-secondary btn-sm d-none d-md-flex" id="toggleMoreSkills">See more</button>                    
+                <!--Desktop display of dynamic skills-->
+                <div class="row d-none" id="dynamicSkills">
+                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                        <h6 class="pb-5"><b>CSS</b></h6>
+                        <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
+                    </div>
+
+                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                        <h6 class="pb-3"><b>Bootstrap</b></h6>
+                        <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
+                    </div>
+                                    
+                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                        <h6 class="pb-3"><b>Git & Github</b></h6>
+                        <p>Maintaining version control workflows with Git including beanching strategies pull requests and collaborative development on Github</p>                    
+                    </div> 
+                </div>
+                <button class="btn btn-secondary btn-sm d-none d-md-flex" id="toggleMoreSkills">See more</button>
+
             </div>
         </section>
 
@@ -97,7 +117,7 @@
                         </div>
 
                         <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://james-york2008.github.io/stockPortfolio/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/stockPortfolio.jpeg" alt="Thumbnail image of my stock portfolio webpage"></a>
+                            <a href="https://james-york2008.github.io/stockPortfolio/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/stockPortfolio.jpeg" alt="Thumbnail image of my stock portfolio webpage"></a>
                         </div>
                     </div>
                 </article>
@@ -110,7 +130,7 @@
                         </div>
 
                         <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://gilded-choux-8b1b6a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
+                            <a href="https://gilded-choux-8b1b6a.netlify.app/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
                         </div>
                     </div>
                 </article>
@@ -123,7 +143,7 @@
                         </div>
                         
                         <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://inspiring-chaja-63ab8a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/newsweek-clone.png" alt="Thumbnail image of my Newsweek clone"></a>
+                            <a href="https://inspiring-chaja-63ab8a.netlify.app/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/newsweek-clone.png" alt="Thumbnail image of my Newsweek clone"></a>
                         </div>
                     </div>
                 </article>
@@ -147,7 +167,6 @@
 
             <p class="text-secondary me-5 text-end"><small>&copy; 2026 James York. All rights reserved</small></p>
         </footer>
-        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
 </html>

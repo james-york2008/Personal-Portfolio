@@ -7,6 +7,15 @@ h4 {
     font-size: 20px;
 }
 
+@media (min-width: 992px) {
+    * {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+}
+
 .dropdown-bordered-items {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -97,3 +106,10 @@ h4 {
     }
 }
 
+section {
+    scroll-margin-top: 50px;
+}
+
+#skills {
+    scroll-margin-top: 50px;
+}
