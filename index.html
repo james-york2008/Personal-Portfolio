@@ -108,45 +108,10 @@
 
         <section id="projects">    
             <div class="container-fluid px-5">
-                <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>                      
-                <article>
-                    <div class="row mb-5 p-0 p-lg-5 bg-light">
-                        <div class="col-12 col-md-6 order-2 order-md-1">
-                            <h5 class="text-center projects-title"><a href="https://james-york2008.github.io/stockPortfolio/"><b class="text-dark">Stock Portfolio</b></a></h5>
-                            <p class="text-secondary">A dynamic stock portfolio management site built with ReactJS. This project features state management, controlled form inputs, and real time value calculation. On this site, users can add, edit, and remove stocks and the total values will automatically be updated.</p>
-                        </div>
-
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://james-york2008.github.io/stockPortfolio/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/stockPortfolio.jpeg" alt="Thumbnail image of my stock portfolio webpage"></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <article>
-                    <div class="row mb-5 p-0 p-lg-5 bg-light">
-                        <div class="col-12 col-md-6 order-2 order-md-1">
-                            <h5 class="text-center projects-title"><a href="https://gilded-choux-8b1b6a.netlify.app/"><b class="text-dark">Airbnb News Clone</b></a></h5>
-                            <p class="text-secondary">This is a mobile responsive clone of the <a class="text-dark" href="https://news.airbnb.com/">Airbnb Newsroom</a> made with Bootstrap v4.6.0. This webpage features article listings, horizontally scrollable sections, and a multi section footer.</p>
-                        </div>
-
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://gilded-choux-8b1b6a.netlify.app/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <article>    
-                    <div class="row my-5 p-0 p-lg-5 bg-light">
-                        <div class="col-12 col-md-6 order-2 order-md-1">
-                            <h5 class="text-center projects-title"><a href="https://inspiring-chaja-63ab8a.netlify.app/"><b class="text-dark">Newsweek Clone</b></a></h5>
-                            <p class="text-secondary">A project done as part of Altcademy's Full Stack Web Development class. This is a clone of <a class="text-dark" href="https://www.newsweek.com/">Newsweek</a>. This project demonstrates a mobile responsive design built using Bootstrap v3.3.6. It features sidebar content organization, and a hierarchy of articles: one main, and two sub articles.</p>
-                        </div>
-                        
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://inspiring-chaja-63ab8a.netlify.app/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/newsweek-clone.png" alt="Thumbnail image of my Newsweek clone"></a>
-                        </div>
-                    </div>
-                </article>
+                <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>
+                <div class="row" id="repoList">
+                    <!--Fetch projects load here-->
+                </div>
             </div>
         </section>
 
@@ -167,6 +132,7 @@
 
             <p class="text-secondary me-5 text-end"><small>&copy; 2026 James York. All rights reserved</small></p>
         </footer>
-        <script src="script.js"></script>
+        <script src="src/seeMoreButton.js"></script>
+        <script src="src/fetchProjects.js"></script>
     </body>
 </html>
