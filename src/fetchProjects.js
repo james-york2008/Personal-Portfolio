@@ -1,12 +1,12 @@
-let repoData = []
-
 document.addEventListener('DOMContentLoaded', () => {
     const checkStatus = (response) => {
         if (response.ok) {
             return response
         }
         throw new Error('Request was either a 404 or a 500')
-    }    
+    }
+    
+    let projectCount = 0    //Only displaying 3 projects by default
 
     fetch(`https://api.github.com/users/james-york2008/repos`)
     .then(checkStatus)
@@ -14,39 +14,55 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
         let repoList = document.getElementById('repoList')
 
-        data.forEach(repo => {
-            let articleContent = `
-            <article>
-                <div class=" mb-5 p-0 p-lg-5 bg-light">
-                    <h5 class="text-center projects-title"><a href="${repo.html_url}"><b class="text-dark">${repo.name}</b></a></h5>
-                    <p class="text-secondary text-center">Made primarily with ${repo.language}</p>
-                </div>
-            </article>
-            `
+        let articleContent = ''
 
-            let article = document.createElement('article') 
-            article.innerHTML = articleContent
-            repoList.appendChild(article)  
-        })
+        data.forEach(repo => {
+            if (projectCount < 3) {
+                articleContent = `
+                <article class="col-12 col-lg-4">
+                    <div class="text-center mb-5 p-0 p-lg-5 bg-light border">
+                        <h5 class="projects-title pt-5 pt-lg-0"><b class="text-dark">${repo.name}</b></h5>
+                        <p class="text-secondary"><small>Made primarily with ${repo.language}</small></p>
+                        
+                        <div class="project-details d-none mt-3 text-start">
+                            <p class="pt-3 px-5 px-lg-0">${repo.description}</p>
+                            <a class="projects-link px-5 px-lg-0" href="${repo.homepage}">Live site</a>
+                            <br><a class="projects-link px-5 px-lg-0" href="${repo.html_url}">Github page</a>
+                            <p class="fw-bold text-center">Tags: 
+                            <br>&bull; ${repo.topics.join('<br>&bull; ')}</p>
+                        </div>
+                        <button class="btn btn-secondary btn-sm seeMoreDetails mb-5 mb-lg-0">See details</button>
+                    </div>
+                </article>
+                `
+            } else {    //You can toggle on the rest of the projects
+                articleContent = `
+                <article class="col-12 col-md-4 d-none dynamicProjects">
+                    <div class="text-center mb-5 p-0 p-lg-5 bg-light border">
+                        <h5 class="projects-title pt-5 pt-lg-0"><b>${repo.name}</b></h5>
+                        <p class="text-secondary"><small>Made primarily with ${repo.language}</small></p>
+                        
+                        <div class="project-details d-none mt-3 text-start">
+                            <p class="pt-3 px-5 px-lg-0">${repo.description}</p>
+                            <a class="projects-link px-5 px-lg-0" href="${repo.homepage}">Live site</a>
+                            <br><a class="projects-link px-5 px-lg-0" href="${repo.html_url}">Github page</a>
+                            <p class="fw-bold text-center">Tags: <br>&bull; ${repo.topics.join('<br>&bull; ')}</p>
+                        </div>
+                        <button class="btn btn-secondary btn-sm seeMoreDetails mb-5 mb-lg-0">See details</button>
+                    </div>
+                </article>
+                `
+            }
+ 
+            if (repo.description) { /*no description on my unfinished projects*/
+                projectCount ++
+                repoList.insertAdjacentHTML('beforeend', articleContent)
+            } else { 
+                return
+            }
+
+        }) 
     }).catch(error => {
         console.log(error)
     })
 })
-
-
-
-
-
-
-  /*  <article>
-                    <div class="row mb-5 p-0 p-lg-5 bg-light">
-                        <div class="col-12 col-md-6 order-2 order-md-1">
-                            <h5 class="text-center projects-title"><a href="https://gilded-choux-8b1b6a.netlify.app/"><b class="text-dark">Airbnb News Clone</b></a></h5>
-                            <p class="text-secondary">This is a mobile responsive clone of the <a class="text-dark" href="https://news.airbnb.com/">Airbnb Newsroom</a> made with Bootstrap v4.6.0. This webpage features article listings, horizontally scrollable sections, and a multi section footer.</p>
-                        </div>
-
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://gilded-choux-8b1b6a.netlify.app/"><img loading="lazy" class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
-                        </div>
-                    </div>
-                </article>*/
