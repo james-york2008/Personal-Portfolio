@@ -18,7 +18,6 @@
 
                 <div class="collapse navbar-collapse" id="navbarmenu">                
                     <ul class="navbar-nav ms-auto text-dark text-center">
-                        <li class="nav-item"><a class="nav-link link-dark py-3" href="#about">About</a></li>
                         <li class="nav-item mobile-dropdown-border-item"><a class="nav-link link-dark py-3" href="#skills">Skills</a></li>
                         <li class="nav-item mobile-dropdown-border-item"><a class="nav-link link-dark py-3" href="#projects">Projects</a></li>
                         <li class="nav-item mobile-dropdown-border-item"><a class="nav-link link-dark py-3" href="#contact">Contact</a></li>
@@ -27,102 +26,115 @@
             </div>
         </nav>
 
-        <section id="about">    
-            <div class="container-fluid">
-                <div class="row justify-content-center align-items-center my-5 pb-5 mx-4">
-                    <h4 class="ps-1 ps-md-5 pb-4"><b>About</b></h4>
-                    <img src="https://picsum.photos/200/200" class="profile-image rounded-circle pb-4 pt-3 pt-lg-0" alt="Image of James York"><!--Placeholder is an oval (which isn't intended) but I will leave it as it is because when I do add a real headshot, the file will be a perfect square-->
-                    <p class="text-secondary col-12 ps-lg-5 about-description text-lg-center">My name is James York, and I am a student studying full stack web development at <a href="https://www.altcademy.com">altcademy.com</a>. I enjoy turning ideas into high quality, accessible user experiences, and I'm currently working toward a long-term career in web development.</p>
-                </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center my-5 pb-5 mx-0 mx-md-5">
+                <h4 class="ps-md-5 pb-3"><b>About</b></h4>
+                <img loading="lazy" src="https://picsum.photos/200/200" class="profile-image rounded-circle pb-3 pt-3 pt-lg-0" alt="Image of James York">
+                <p class="text-secondary col-12 ps-lg-5 about-description text-lg-center">My name is James York, and I am a student studying full stack web development at <a href="https://www.altcademy.com">altcademy.com</a>. I enjoy turning ideas into high quality, accessible user experiences, and I'm currently working toward a long-term career in software development. You can view my Github <a href="https://github.com/james-york2008">here</a>.</p>
             </div>
-        </section>
+        </div>
 
-        <section id="skills">
-            <div class="container-fluid pb-5 px-5">
+        <section>
+            <div class="container-fluid pb-5 mb-md-5 ps-5" id="skills">
                 <div class="row">
-                    <h4 class="ps-1 ps-md-5 pb-4"><b>Skills</b></h4>
-                    <div class="skills d-flex flex-nowrap">
+                    <h4 class="ps-md-5 pb-4"><b>Skills</b></h4>
+                    <div class="skills d-flex flex-md-wrap">
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" >
+                            <i class="fa-brands fa-react fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>ReactJS</b></h6>
+                            <p>Building scalable, component driven user interfaces with React that utilize hooks, and state management</p>
+                        </div>
+
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
+                            <i class="fa-brands fa-js fa-4x" aria-hidden="true"></i>
+                            <h6 class="pb-3"><b>Javascript</b></h6>
+                            <p>Creating dynamic web applications with ES6+, including asynchronous programming, API integration, and DOM manipulation</p>
+                        </div>
+
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                             <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
                             <h6 class="pb-3"><b>HTML</b></h6>
-                            <p>Writing semantic, well structured HTML that excels in accessibility</p>
-                        </div>
+                            <p>Writing semantic, accessible, standard compliant markup designed for scalability, and search engine optimization</p>
+                        </div>     
+                        <div class="d-flex d-md-none">  <!--Mobile display of dynamic skills-->
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                                <h6 class="pb-5"><b>CSS</b></h6>
+                                <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
+                            </div>
 
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                            <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>CSS</b></h6>
-                            <p>Building polished page designs using CSS</p>
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                                <h6 class="pb-3"><b>Bootstrap</b></h6>
+                                <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
+                            </div>
+                                            
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                                <h6 class="pb-3"><b>Git & Github</b></h6>
+                                <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on Github</p>                    
+                            </div>                          
                         </div>
-
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                            <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>Bootstrap</b></h6>
-                            <p>Creating responsive webpages using Bootstrap 3, 4, and 5</p> 
-                        </div>
-
-                        <a href="#skill-diligence" aria-label="Click to view more skills" class="position-relative see-more-arrows d-none d-md-block"><i class="fa-solid fa-arrow-right fa-2x" aria-hidden="true"></i></a>
-
-                        
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                            <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>Git & Github</b></h6>
-                            <p>Version control with Git and collaboration with GitHub</p>                    
-                        </div>
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                            <i class="fa-solid fa-comments fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>Communication</b></h6>
-                            <p>Communicating clearly to maintain smooth collaboration on team projects</p>
-                        </div>
-
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-diligence">
-                            <i class="fa-solid fa-clock fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>Diligence</b></h6>
-                            <p>Consistently learning, and working to improve my web development skills</p>
-                        </div>
-
-                        <a href="#skill-html" class="see-more-arrows position-relative d-none d-md-block"><i class="fa-solid fa-arrow-left fa-2x" aria-hidden="true"></i></a>
                     </div>
                 </div>
+
+                <!--Desktop display of dynamic skills-->
+                <div class="row d-none" id="dynamicSkills">
+                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                        <h6 class="pb-5"><b>CSS</b></h6>
+                        <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
+                    </div>
+
+                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                        <h6 class="pb-3"><b>Bootstrap</b></h6>
+                        <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
+                    </div>
+                                    
+                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                        <h6 class="pb-3"><b>Git & Github</b></h6>
+                        <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on Github</p>                    
+                    </div> 
+                </div>
+                <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills">See more</button>
+
             </div>
         </section>
 
-        <section id="projects">    
-            <div class="container-fluid px-5">
-                <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>                      
-                <article>
-                    <div class="row mb-5 p-0 p-lg-5 bg-light">
-                        <div class="col-12 col-md-6 order-2 order-md-1">
-                            <h5 class="text-center projects-title"><a href="https://gilded-choux-8b1b6a.netlify.app/"><b class="text-dark">Airbnb News Clone</b></a></h5>
-                            <p class="text-secondary">This is a mobile responsive clone of the <a class="text-dark" href="https://news.airbnb.com/">Airbnb Newsroom</a> made with Bootstrap v4.6.0. This webpage features article listings, horizontally scrollable sections, and a multi section footer.</p>
-                        </div>
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://gilded-choux-8b1b6a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/airbnb-news-clone.png" alt="Thumbnail image of my airbnb news clone"></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <article>    
-                    <div class="row my-5 p-0 p-lg-5 bg-light">
-                        <div class="col-12 col-md-6 order-2 order-md-1">
-                            <h5 class="text-center projects-title"><a href="https://inspiring-chaja-63ab8a.netlify.app/"><b class="text-dark">Newsweek Clone</b></a></h5>
-                            <p class="text-secondary">A project done as part of Altcademy's Full Stack Web Development class. This is a clone of <a class="text-dark" href="https://www.newsweek.com/">Newsweek</a>. This project demonstrates a mobile responsive design built using Bootstrap v3.3.6. It features sidebar content organization, and a hierarchy of articles: one main, and two sub articles.</p>
-                        </div>
-                        <div class="col-12 col-md-6 order-1 order-md-2">
-                            <a href="https://inspiring-chaja-63ab8a.netlify.app/"><img class="w-100 pb-3 pb-md-0 projects-thumbnail" src="images/newsweek-clone.png" alt="Thumbnail image of my Newsweek clone"></a>
-                        </div>
-                    </div>
-                </article>
+        <section id="projects" class="py-5 py-lg-0">    
+            <div class="container-fluid px-3 px-md-5">
+                <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>
+                <div class="row" id="repoList">
+                    <!--Fetched repos load here-->
+
+                </div>
+                <button class="btn btn-secondary btn-sm ms-1 mb-5 ms-md-5" id="toggleMoreProjects">See more projects</button>
             </div>
         </section>
 
         <section id="contact">    
-                <div class="container-fluid py-5 bg-light">
-                    <h5 class="ps-4 ps-md-5 pb-4"><b>Get in touch</b></h5>
-                    <ul class="list-unstyled gap-4 contact-info d-flex ms-5 ms-md-5">
-                        <li><a href="mailto:jwyork2008@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James,"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
-                        <li><a href="https://github.com/james-york2008"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
-                    </ul>
-                </div>
+            <div class="container-fluid py-5 bg-light">
+                <h4 class="ps-4 ps-md-5 pb-4"><b>Get in touch</b></h4>
+
+                <!--pc viewport contacts-->
+                <ul class="list-unstyled gap-4 contact-info d-none d-lg-flex  ms-5">
+                    <li><a href="mailto:jamesyork.dev@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James,"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
+                    
+                    <li><a href="https://github.com/james-york2008"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/james-york-38340b271?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
+                </ul>
+
+                <!--Mobile viewport contacts-->
+                <ul class="list-unstyled gap-4 contact-info d-flex d-lg-none ms-5 flex-column">
+                    <li><a href="mailto:jamesyork.dev@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James,"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
+                    
+                    <li><a href="https://github.com/james-york2008"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/james-york-38340b271?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
+                </ul>
             </div>
         </section>        
 
@@ -131,7 +143,10 @@
             <a class="ms-5" id="back-to-top" href="#top">Back to top</a>
 
             <p class="text-secondary me-5 text-end"><small>&copy; 2026 James York. All rights reserved</small></p>
-
         </footer>
+        <script src="src/seeMoreSkillsButton.js"></script>
+        <script src="src/fetchProjects.js"></script>
+        <script src="src/seeMoreProjectsButton.js"></script>
+        <script src="src/seeMoreDetailsButton.js"></script>
     </body>
 </html>
