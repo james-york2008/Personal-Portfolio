@@ -1,2 +1,2 @@
 # Personal-Portfolio
-https://sunny-kataifi-d44748.netlify.app/
+https://james-york2008.github.io/Personal-Portfolio/
