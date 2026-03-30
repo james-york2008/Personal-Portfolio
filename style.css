@@ -110,3 +110,23 @@ section {
     scroll-margin-top: 50px;
 }
 
+.projectCard img {
+    width: 75vw;
+    margin: 0 auto 3rem;
+}
+
+@media (min-width: 992px) {
+    .projectCard {
+        display: flex;
+    }
+
+    .articleText {
+        width: 50%;
+    }
+
+    .projectCard img {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 30px;
+    }
+}
