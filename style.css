@@ -127,6 +127,9 @@ section {
     .projectCard img {
         width: 100%;
         padding: 1rem;
-        border-radius: 30px;
     }
+}
+
+.projectCard, .projectCard img {
+    border-radius: 30px;
 }

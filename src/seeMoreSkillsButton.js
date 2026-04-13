@@ -3,10 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const skills = document.getElementById('dynamicSkills')
     
     btn.addEventListener('click', () => {
-        skills.classList.toggle('d-none')
-        btn.textContent = skills.classList.contains('d-none')
-            ?'See more'
-            :'See less'
+        btn.ariaExpanded === true
+        ? btn.ariaExpanded = false
+        : btn.ariaExpanded = true
+
+        const isHidden = skills.classList.toggle('d-none')
+        btn.setAttribute('aria-hidden', (!isHidden).toString())
+        btn.textContent = isHidden ?'See more' :'See less'
+        
         btn.classList.toggle('btn-success')
         btn.classList.toggle('btn-danger')
     })
