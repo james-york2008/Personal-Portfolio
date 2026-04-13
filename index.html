@@ -11,7 +11,7 @@
     <body>
         <nav class="navbar navbar-expand-md p-3 navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" id="top"><span class="d-none d-md-inline">Personal Portfolio |</span> James York</a>
+                <a class="navbar-brand" href="index.html" id="top"><span class="d-none d-md-inline">Personal Portfolio |</span> James York</a>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation dropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,7 +47,7 @@
 
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
                             <i class="fa-brands fa-js fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>Javascript</b></h6>
+                            <h6 class="pb-3"><b>JavaScript</b></h6>
                             <p>Creating dynamic web applications with ES6+, including asynchronous programming, API integration, and DOM manipulation</p>
                         </div>
 
@@ -71,7 +71,7 @@
                                             
                             <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                 <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
-                                <h6 class="pb-3"><b>Git & Github</b></h6>
+                                <h6 class="pb-3"><b>Git & GitHub</b></h6>
                                 <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on Github</p>                    
                             </div>                          
                         </div>
@@ -98,7 +98,7 @@
                         <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on Github</p>                    
                     </div> 
                 </div>
-                <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills">See more</button>
+                <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills" aria-expanded="false">See more</button>
 
             </div>
         </section>
@@ -107,19 +107,34 @@
             <div class="container-fluid px-3 px-md-5">
                 <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>
                 <div class="row" id="repoList">
-                    <article class="col-12 text-start projectCard bg-light border">
+                    <article class="col-12 text-start projectCard bg-light border my-3">
                         <div class="mb-5 p-0 p-lg-5 articleText">
                             <a href="https://james-york2008.github.io/criminalProfileDatabase/index.html" class="projectHeadingLink"><h5 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">Fictional Criminal Profile Database</b></h5></a>
                             
                             <div class="mt-3 text-start">
-                                <p class="pt-3 px-5 px-lg-0">This is a fictional criminal profile database that dynamically renders character profiles, and case files for each character.</p>
-                                <a class="projects-link px-5 px-lg-0" href="https://james-york2008.github.io/criminalProfileDatabase/index.html">Live site</a>
-                                <br><a class="projects-link px-5 px-lg-0" href="https://github.com/james-york2008/criminalProfileDatabase">Github page</a>
+                                <p class="pt-3 px-3 px-lg-0">This is a fictional criminal profile database that dynamically renders character profiles, and case files for each character.</p>
+                                <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/criminalProfileDatabase/index.html">Live site</a>
+                                <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/criminalProfileDatabase">Github page</a>
                             </div>
                         </div>
-                        <img src="images/mobileCriminalProfileDatabase.png" alt="Image of the criminal profile database webpage on mobile" class="d-flex d-lg-none">
-                        <img src="images/desktopCriminalProfileDatabase.png" alt="Image of the criminal profile database webpage on desktop" class="d-none d-lg-flex w-50">
+                        <img src="images/criminalProfileDatabase/mobileCriminalProfileDatabase.png" alt="Image of the criminal profile database webpage on mobile" class="d-flex d-lg-none">
+                        <img src="images/criminalProfileDatabase/desktopCriminalProfileDatabase.png" alt="Image of the criminal profile database webpage on desktop" class="d-none d-lg-flex w-50">
                     </article>
+
+                    <article class="col-12 text-start projectCard bg-light border my-3">
+                        <div class="mb-5 p-0 p-lg-5 articleText">
+                            <a href="https://james-york2008.github.io/UXPrep/" class="projectHeadingLink"><h5 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">FEWD Interview Preparation Tool</b></h5></a>
+                            
+                            <div class="mt-3 text-start">
+                                <p class="pt-3 px-3 px-lg-0">UXPrep is a frontend web development interview practice tool that dynamically renders quizzes. It covers important concepts like accessibility, semantics, and performance.</p>
+                                <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/UXPrep/">Live site</a>
+                                <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/UXPrep">Github page</a>
+                            </div>
+                        </div>
+                        <img src="images/uxPrep/mobileUxPrepImage.jpg" alt="Image of the UXPrep webpage on mobile" class="d-flex d-lg-none">
+                        <img src="images/uxPrep/desktopUxPrepImage.png" alt="Image of the UXPrep webpage on desktop" class="d-none d-lg-flex w-50">
+                    </article>
+                    
 
                 </div>
                 <!--<button class="btn btn-secondary btn-sm ms-1 mb-5 ms-md-5" id="toggleMoreProjects">See more projects</button>-->
@@ -132,20 +147,20 @@
 
                 <!--pc viewport contacts-->
                 <ul class="list-unstyled gap-4 contact-info d-none d-lg-flex  ms-5">
-                    <li><a href="mailto:jamesyork.dev@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James,"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
+                    <li><a href="mailto:jamesyork.dev@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James%2C" aria-label="Email James York"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
                     
-                    <li><a href="https://github.com/james-york2008"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
+                    <li><a href="https://github.com/james-york2008" aria-label="View James York's GitHub page"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
                     
-                    <li><a href="https://www.linkedin.com/in/james-york-38340b271?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/james-york-38340b271?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="View James York's LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
                 </ul>
 
                 <!--Mobile viewport contacts-->
                 <ul class="list-unstyled gap-4 contact-info d-flex d-lg-none ms-5 flex-column">
-                    <li><a href="mailto:jamesyork.dev@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James,"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
+                    <li><a href="mailto:jamesyork.dev@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20James%2C" aria-label="Email James York"><i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i> Gmail</a></li>
                     
-                    <li><a href="https://github.com/james-york2008"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
+                    <li><a href="https://github.com/james-york2008" aria-label="View James York's GitHub page"><i class="fa-brands fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
                     
-                    <li><a href="https://www.linkedin.com/in/james-york-38340b271?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/james-york-38340b271?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="View James York's LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
                 </ul>
             </div>
         </section>        
@@ -156,7 +171,6 @@
 
             <p class="text-secondary me-5 text-end"><small>&copy; 2026 James York. All rights reserved</small></p>
         </footer>
-        <script src="src/seeMoreProjectsButton.js"></script>
-        <script src="src/seeMoreDetailsButton.js"></script>
+        <script src="src/seeMoreSkillsButton.js"></script>
     </body>
 </html>
