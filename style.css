@@ -108,6 +108,10 @@ section {
     margin: 0 auto 3rem;
 }
 
+.projectCard {
+    flex-direction: column;
+}
+
 @media (min-width: 992px) {
     .projectCard {
         display: flex;
