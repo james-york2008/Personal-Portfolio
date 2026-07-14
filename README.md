@@ -44,6 +44,9 @@ This repository contains my personal frontend developer portfolio, designed to h
 - **Logic:** JavaScript
 
 
+## Code Improvements
+- Replaced old `.jpg` and `.png` assets with modern `.webp`s
+
 ## Potential Future Improvements:
 - Add project filtering
 - Introduce a dark mode
