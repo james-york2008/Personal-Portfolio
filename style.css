@@ -7,26 +7,14 @@ h4 {
     font-size: 30px;
 }
 
-@media (min-width: 992px) {
-    body {
-        font-size: 20px;
-    }
-}
-
 .navbar {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
 .profile-image {
     height: 200px;
-    width: 200px;
+    width: 175px;
     object-fit: cover;
-}
-
-@media (max-width: 992px) {
-    .profile-image {
-        width: 175px;
-    }
 }
 
 .about-description {
@@ -34,33 +22,11 @@ h4 {
 }
 
 #about p {
-    font-size: 20px;
-}
-
-@media (max-width: 576px) {
-    #about p {
-        font-size: 18px;
-    }
+    font-size: 18px;
 }
 
 .skills::-webkit-scrollbar-thumb {
     height: 8px;
-}
-@media (min-width: 992px) {
-    .skills::-webkit-scrollbar {
-        background: rgb(255, 255, 255);
-    }
-}
-
-@media (min-width: 992px) {
-    .projects-link {
-        text-decoration: none;
-    }
-
-    .projects-link:hover {
-        color: orangered;
-        text-decoration: underline orangered;
-    }
 }
 
 .projects-link {
@@ -83,18 +49,6 @@ h4 {
     text-decoration: underline;
 }
 
-@media (max-width: 992px) {
-    .mobile-dropdown-border-item {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    }
-}
-
-@media (max-width: 992px) {
-    .skills {
-        overflow-x: auto;
-    }
-}
-
 section {
     scroll-margin-top: 50px;
 }
@@ -108,7 +62,53 @@ section {
     margin: 0 auto 3rem;
 }
 
+.projectCard, .projectCard img {
+    border-radius: 30px;
+}
+
+.techStackList {
+    line-height: 0.9;
+    padding-bottom: 1rem;
+    list-style: "-";
+}
+
+.heroLinksList {
+    list-style: none;
+}
+
+.mobile-dropdown-border-item {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.skills {
+    overflow-x: auto;
+}
+
+@media (min-width: 576px) {
+    #about p {
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 992px) {
+    body {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .skills::-webkit-scrollbar {
+        background: rgb(255, 255, 255);
+    }
+
+    .projects-link {
+        text-decoration: none;
+    }
+
+    .projects-link:hover {
+        color: orangered;
+        text-decoration: underline orangered;
+    }
+
     .projectCard {
         display: flex;
     }
@@ -121,8 +121,16 @@ section {
         width: 100%;
         padding: 1rem;
     }
-}
 
-.projectCard, .projectCard img {
-    border-radius: 30px;
+    .profile-image {
+        width: 200px;
+    }
+
+    .mobile-dropdown-border-item {
+        border: none;
+    }
+
+    .techStackList {
+        text-indent: 1rem;
+    }
 }

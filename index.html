@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e067495424.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2fd0f2929c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Personal Portfolio: James York</title>
@@ -11,7 +11,7 @@
     <body>
         <nav class="navbar navbar-expand-md p-3 navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" id="top"><span class="d-none d-md-inline">Personal Portfolio |</span> James York</a>
+                <h1><a class="navbar-brand" href="index.html" id="top"><span class="d-none d-md-inline">Personal Portfolio |</span> James York</a></h1>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation dropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -20,141 +20,160 @@
                     <ul class="navbar-nav ms-auto text-dark text-center">
                         <li class="nav-item mobile-dropdown-border-item"><a class="nav-link link-dark py-3" href="#skills">Skills</a></li>
                         <li class="nav-item mobile-dropdown-border-item"><a class="nav-link link-dark py-3" href="#projects">Projects</a></li>
-                        <li class="nav-item "><a class="nav-link link-dark py-3" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link link-dark py-3" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center my-5 pb-5 mx-0 mx-md-5">
-                <h4 class="ps-md-5 pb-3"><b>About</b></h4>
-                <img loading="lazy" src="images/profilePicture.webp" class="profile-image rounded-circle pb-3 pt-3 pt-lg-0" alt="Image of James York">
-                <p class="text-secondary col-12 ps-lg-5 about-description text-lg-center">My name is James York, and I am a frontend web developer. During my senior year of high school, I took several courses at <a href="https://www.altcademy.com" target="_blank" rel="noopener noreferrer">altcademy</a> that helped me build fundamentals in web development and I have chosen to further my education in my own time. I enjoy turning ideas into high quality, accessible user experiences, and I'm currently working toward a long-term career in software development. You can explore my work on <a href="https://github.com/james-york2008" aria-label="View James York's GitHub page" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-            </div>
-        </div>
+        <main>            
+            <section>
+                <div class="container-fluid">
+                    <div class="row justify-content-center align-items-center my-5 pb-5 mx-0 mx-md-5">
+                        <h2 class="ps-md-5 pb-3"><b>James York</b></h2>
+                        <img loading="lazy" src="images/profilePicture.webp" class="profile-image rounded-circle pb-3 pt-3 pt-lg-0" alt="Image of James York">
+                        <p class="col-12 ps-lg-5 text-lg-center fw-bold">Frontend Developer & Accessibility Specialist</p>
+    
+                        <div class="d-flex justify-content-center">
+                            <ul class="techStackList">
+                                <li><i class="fa-brands fa-react" aria-hidden="true"></i>React</li>
+                                <li><i class="fa-brands fa-typescript" aria-hidden="true"></i>TypeScript</li>
+                                <li><i class="fa-solid fa-universal-access" aria-hidden="true"></i>Accessibility</li>
+                            </ul>
 
-        <section>
-            <div class="container-fluid pb-5 mb-md-5 ps-5" id="skills">
-                <div class="row">
-                    <h4 class="ps-md-5 pb-4"><b>Skills</b></h4>
-                    <div class="skills d-flex flex-md-wrap">
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" >
-                            <i class="fa-brands fa-react fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>ReactJS</b></h6>
-                            <p>Building scalable, component driven user interfaces with React that utilize hooks, and state management</p>
+                            <ul class="list-group ms-3 ms-lg-5 mb-5 heroLinksList">
+                                <li><a href="#projects" class="list-group-item border-0 p-0 mb-1">View Projects</a></li>
+                                <li><a href="https://github.com/james-york2008" target="_blank" rel="noopener noreferrer" class="list-group-item border-0 p-0">GitHub</a></li>
+                            </ul>
                         </div>
+                        
+                        <p class="text-secondary col-12 ps-lg-5 about-description text-lg-center">I am a self-driven developer who built strong fundamentals in frontend web development at <a href="https://www.altcademy.com" target="_blank" rel="noopener noreferrer">Altcademy</a>. Today, I focus on implementing inclusive, keyboard friendly web applications that follow WCAG guidelines and expanding my skills in software engineering. You can check out my projects on <a href="https://github.com/james-york2008" aria-label="View James York's GitHub page" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+                    </div>
+                </div>
+            </section>
 
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
-                            <i class="fa-brands fa-js fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>JavaScript</b></h6>
-                            <p>Creating dynamic web applications with ES6+, including asynchronous programming, API integration, and DOM manipulation</p>
+            <section>
+                <div class="container-fluid pb-5 mb-md-5 ps-5" id="skills">
+                    <div class="row">
+                        <h2 class="ps-md-5 pb-4"><b>Skills</b></h2>
+                        <div class="skills d-flex flex-md-wrap">
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3" >
+                                <i class="fa-brands fa-react fa-4x" aria-hidden="true"></i>
+                                <h4 class="pb-3"><b>ReactJS</b></h4>
+                                <p>Building scalable, component driven user interfaces with React that utilize hooks, and state management</p>
+                            </div>
+
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
+                                <i class="fa-brands fa-js fa-4x" aria-hidden="true"></i>
+                                <h4 class="pb-3"><b>JavaScript</b></h4>
+                                <p>Creating dynamic web applications with ES6+, including asynchronous programming, API integration, and DOM manipulation</p>
+                            </div>
+
+                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
+                                <h4 class="pb-3"><b>HTML</b></h4>
+                                <p>Writing semantic, accessible, standard compliant markup designed for scalability, and search engine optimization</p>
+                            </div>     
+                            <div class="d-flex d-md-none">  <!--Mobile display of dynamic skills-->
+                                <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                    <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                                    <h4 class="pb-5"><b>CSS</b></h4>
+                                    <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
+                                </div>
+
+                                <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                    <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                                    <h4 class="pb-3"><b>Bootstrap</b></h4>
+                                    <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
+                                </div>
+                                                
+                                <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                                    <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                                    <h4 class="pb-3"><b>Git & GitHub</b></h4>
+                                    <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on GitHub</p>                    
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Desktop display of dynamic skills-->
+                    <div class="row d-none" id="dynamicSkills">
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                            <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
+                            <h4 class="pb-5"><b>CSS</b></h4>
+                            <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
                         </div>
 
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                            <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
-                            <h6 class="pb-3"><b>HTML</b></h6>
-                            <p>Writing semantic, accessible, standard compliant markup designed for scalability, and search engine optimization</p>
-                        </div>     
-                        <div class="d-flex d-md-none">  <!--Mobile display of dynamic skills-->
-                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                                <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
-                                <h6 class="pb-5"><b>CSS</b></h6>
-                                <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
-                            </div>
-
-                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                                <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
-                                <h6 class="pb-3"><b>Bootstrap</b></h6>
-                                <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
-                            </div>
-                                            
-                            <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                                <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
-                                <h6 class="pb-3"><b>Git & GitHub</b></h6>
-                                <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on GitHub</p>                    
-                            </div>                          
+                            <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
+                            <h4 class="pb-3"><b>Bootstrap</b></h4>
+                            <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
                         </div>
+                                        
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                            <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
+                            <h4 class="pb-3"><b>Git & GitHub</b></h4>
+                            <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on GitHub</p>                    
+                        </div> 
+                    </div>
+                    <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills" aria-expanded="false">See more</button>
+
+                </div>
+            </section>
+
+            <section id="projects" class="py-5 py-lg-0">    
+                <div class="container-fluid px-3 px-md-5">
+                    <h2 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h2>
+                    <div class="row" id="repoList">
+                        <article class="col-12 text-start projectCard bg-light border my-3">
+                            <div class="mb-5 p-0 p-lg-5 articleText">
+                                <a href="https://james-york2008.github.io/neonReel/" class="projectHeadingLink" target="_blank" rel="noopener noreferrer"><h3 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">Movie Discovery Page</b></h3></a>
+                                
+                                <div class="mt-3 text-start">
+                                    <p class="pt-3 px-3 px-lg-0">Neon Reel is a movie finder webpage made using React, TypeScript, HTML, CSS, and the TMDB API. It dynamically renders movies based off of search results, genre filters, and year filters. It also offers a random option to render a random movie card.</p>
+                                    <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/neonReel/" target="_blank" rel="noopener noreferrer">Live site</a>
+                                    <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/neonReel" target="_blank" rel="noopener noreferrer">GitHub page</a>
+                                </div>
+                            </div>
+                            <img src="images/neonReel/mobileNeonReel.webp" alt="Image of the Neon Reel homepage" class="d-flex d-lg-none">
+                            <img src="images/neonReel/desktopNeonReel.webp" alt="Image of the Neon Reel homepage" class="d-none d-lg-flex w-50">
+                        </article>
+
+                        <article class="col-12 text-start projectCard bg-light border my-3">
+                            <div class="mb-5 p-0 p-lg-5 articleText">
+                                <a href="https://james-york2008.github.io/UXPrep/" class="projectHeadingLink" target="_blank" rel="noopener noreferrer"><h3 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">FEWD Interview Preparation Tool</b></h3></a>
+                                
+                                <div class="mt-3 text-start">
+                                    <p class="pt-3 px-3 px-lg-0">UXPrep is a frontend web development interview practice tool made using React and TypeScript that dynamically renders quizzes. It covers important concepts like accessibility, semantics, and performance.</p>
+                                    <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/UXPrep/" target="_blank" rel="noopener noreferrer">Live site</a>
+                                    <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/UXPrep" target="_blank" rel="noopener noreferrer">GitHub page</a>
+                                </div>
+                            </div>
+                            <img src="images/uxPrep/mobileUxPrep.webp" alt="Image of the UXPrep homepage" class="d-flex d-lg-none">
+                            <img src="images/uxPrep/desktopUxPrep.webp" alt="Image of the UXPrep homepage" class="d-none d-lg-flex w-50">
+                        </article>                    
+
+                        <article class="col-12 text-start projectCard bg-light border my-3">
+                            <div class="mb-5 p-0 p-lg-5 articleText">
+                                <a href="https://james-york2008.github.io/n1ghtfall/" class="projectHeadingLink" target="_blank" rel="noopener noreferrer"><h3 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">Community Dashboard</b></h3></a>
+                                
+                                <div class="mt-3 text-start">
+                                    <p class="pt-3 px-3 px-lg-0">N1ghtfall is a community dashboard webpage made with React and TypeScript that dynamically renders an online communities schedule, main roster, and onboarding requirements.</p>
+                                    <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/n1ghtfall/" target="_blank" rel="noopener noreferrer">Live site</a>
+                                    <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/n1ghtfall" target="_blank" rel="noopener noreferrer">GitHub page</a>
+                                </div>
+                            </div>
+                            <img src="images/n1ghtfall/mobileN1ghtfall.webp" alt="Image of the n1ghtfall community homepage" class="d-flex d-lg-none">
+                            <img src="images/n1ghtfall/desktopN1ghtfall.webp" alt="Image of the n1ghtfall community homepage" class="d-none d-lg-flex w-50">
+                        </article>
                     </div>
                 </div>
-
-                <!--Desktop display of dynamic skills-->
-                <div class="row d-none" id="dynamicSkills">
-                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                        <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
-                        <h6 class="pb-5"><b>CSS</b></h6>
-                        <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
-                    </div>
-
-                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                        <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
-                        <h6 class="pb-3"><b>Bootstrap</b></h6>
-                        <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
-                    </div>
-                                    
-                    <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
-                        <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
-                        <h6 class="pb-3"><b>Git & GitHub</b></h6>
-                        <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on GitHub</p>                    
-                    </div> 
-                </div>
-                <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills" aria-expanded="false">See more</button>
-
-            </div>
-        </section>
-
-        <section id="projects" class="py-5 py-lg-0">    
-            <div class="container-fluid px-3 px-md-5">
-                <h4 class="ps-1 ps-md-5 pb-4"><b>Projects</b></h4>
-                <div class="row" id="repoList">
-                    <article class="col-12 text-start projectCard bg-light border my-3">
-                        <div class="mb-5 p-0 p-lg-5 articleText">
-                            <a href="https://james-york2008.github.io/neonReel/" class="projectHeadingLink" target="_blank" rel="noopener noreferrer"><h5 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">Movie Discovery Page</b></h5></a>
-                            
-                            <div class="mt-3 text-start">
-                                <p class="pt-3 px-3 px-lg-0">Neon Reel is a movie finder webpage made using React, TypeScript, HTML, CSS, and the TMDB API. It dynamically renders movies based off of search results, genre filters, and year filters. It also offers a random option to render a random movie card.</p>
-                                <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/neonReel/" target="_blank" rel="noopener noreferrer">Live site</a>
-                                <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/neonReel" target="_blank" rel="noopener noreferrer">GitHub page</a>
-                            </div>
-                        </div>
-                        <img src="images/neonReel/mobileNeonReel.webp" alt="Image of the Neon Reel homepage" class="d-flex d-lg-none">
-                        <img src="images/neonReel/desktopNeonReel.webp" alt="Image of the Neon Reel homepage" class="d-none d-lg-flex w-50">
-                    </article>
-
-                    <article class="col-12 text-start projectCard bg-light border my-3">
-                        <div class="mb-5 p-0 p-lg-5 articleText">
-                            <a href="https://james-york2008.github.io/UXPrep/" class="projectHeadingLink" target="_blank" rel="noopener noreferrer"><h5 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">FEWD Interview Preparation Tool</b></h5></a>
-                            
-                            <div class="mt-3 text-start">
-                                <p class="pt-3 px-3 px-lg-0">UXPrep is a frontend web development interview practice tool made using React and TypeScript that dynamically renders quizzes. It covers important concepts like accessibility, semantics, and performance.</p>
-                                <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/UXPrep/" target="_blank" rel="noopener noreferrer">Live site</a>
-                                <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/UXPrep" target="_blank" rel="noopener noreferrer">GitHub page</a>
-                            </div>
-                        </div>
-                        <img src="images/uxPrep/mobileUxPrep.webp" alt="Image of the UXPrep homepage" class="d-flex d-lg-none">
-                        <img src="images/uxPrep/desktopUxPrep.webp" alt="Image of the UXPrep homepage" class="d-none d-lg-flex w-50">
-                    </article>                    
-
-                    <article class="col-12 text-start projectCard bg-light border my-3">
-                        <div class="mb-5 p-0 p-lg-5 articleText">
-                            <a href="https://james-york2008.github.io/n1ghtfall/" class="projectHeadingLink" target="_blank" rel="noopener noreferrer"><h5 class="projects-title pt-5 pt-lg-0 text-center"><b class="text-dark">Community Dashboard</b></h5></a>
-                            
-                            <div class="mt-3 text-start">
-                                <p class="pt-3 px-3 px-lg-0">N1ghtfall is a community dashboard webpage made with React and TypeScript that dynamically renders an online communities schedule, main roster, and onboarding requirements.</p>
-                                <a class="projects-link px-3 px-lg-0" href="https://james-york2008.github.io/n1ghtfall/" target="_blank" rel="noopener noreferrer">Live site</a>
-                                <br><a class="projects-link px-3 px-lg-0" href="https://github.com/james-york2008/n1ghtfall" target="_blank" rel="noopener noreferrer">GitHub page</a>
-                            </div>
-                        </div>
-                        <img src="images/n1ghtfall/mobileN1ghtfall.webp" alt="Image of the n1ghtfall community homepage" class="d-flex d-lg-none">
-                        <img src="images/n1ghtfall/desktopN1ghtfall.webp" alt="Image of the n1ghtfall community homepage" class="d-none d-lg-flex w-50">
-                    </article>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <section id="contact">    
             <div class="container-fluid py-5 bg-light">
-                <h4 class="ps-4 ps-md-5 pb-4"><b>Get in touch</b></h4>
+                <h2 class="ps-4 ps-md-5 pb-4"><b>Get in touch</b></h2>
 
                 <!--pc viewport contacts-->
                 <ul class="list-unstyled gap-4 contact-info d-none d-lg-flex  ms-5">
