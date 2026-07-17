@@ -44,8 +44,15 @@ This repository contains my personal frontend developer portfolio, designed to h
 - **Logic:** JavaScript
 
 
-## Code Improvements
-- Replaced old `.jpg` and `.png` assets with modern `.webp`s
+## Challenges Faced and Lessons Learned
+
+### Code Improvements
+- Replaced old `.jpg` and `.png` assets with modern `.webp`s and later re-encoded them to truly reduce file size
+- Organized inconsistent media query usage to improve readability
+
+### Heading Structure
+- Reworked an old `h4 -> h5 -> h6` heading structure to a more accessible `h1 -> h2 -> h3`
+- Accidentally edited a Bootstrap CDN link using global multi cursor editing and fixed it by pulling the original link from the GitHub repository
 
 ## Potential Future Improvements:
 - Add project filtering
