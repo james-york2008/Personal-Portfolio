@@ -9,6 +9,7 @@
     <title>Personal Portfolio: James York</title>
 </head>
     <body>
+        <a href="#about" class="visually-hidden-focusable">Skip to main content</a>
         <nav class="navbar navbar-expand-md p-3 navbar-light bg-light">
             <div class="container-fluid">
                 <h1><a class="navbar-brand" href="index.html" id="top"><span class="d-none d-md-inline">Personal Portfolio |</span> James York</a></h1>
@@ -29,7 +30,7 @@
         <main>            
             <section>
                 <div class="container-fluid">
-                    <div class="row justify-content-center align-items-center my-5 pb-5 mx-0 mx-md-5">
+                    <div class="row justify-content-center align-items-center my-5 pb-5 mx-0 mx-md-5" id="about">
                         <h2 class="ps-md-5 pb-3"><b>James York</b></h2>
                         <img loading="lazy" src="images/profilePicture.webp" class="profile-image rounded-circle pb-3 pt-3 pt-lg-0" alt="Image of James York">
                         <p class="col-12 ps-lg-5 text-lg-center fw-bold">Frontend Developer & Accessibility Specialist</p>
@@ -59,37 +60,37 @@
                         <div class="skills d-flex flex-md-wrap">
                             <div class="skill-item col-8 col-md-4 text-center h-100 p-3" >
                                 <i class="fa-brands fa-react fa-4x" aria-hidden="true"></i>
-                                <h4 class="pb-3"><b>ReactJS</b></h4>
+                                <h3 class="pb-3"><b>ReactJS</b></h3>
                                 <p>Building scalable, component driven user interfaces with React that utilize hooks, and state management</p>
                             </div>
 
                             <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="skill-html">
                                 <i class="fa-brands fa-js fa-4x" aria-hidden="true"></i>
-                                <h4 class="pb-3"><b>JavaScript</b></h4>
+                                <h3 class="pb-3"><b>JavaScript</b></h3>
                                 <p>Creating dynamic web applications with ES6+, including asynchronous programming, API integration, and DOM manipulation</p>
                             </div>
 
                             <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                 <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
-                                <h4 class="pb-3"><b>HTML</b></h4>
+                                <h3 class="pb-3"><b>HTML</b></h3>
                                 <p>Writing semantic, accessible, standard compliant markup designed for scalability, and search engine optimization</p>
                             </div>     
                             <div class="d-flex d-md-none">  <!--Mobile display of dynamic skills-->
                                 <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                     <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
-                                    <h4 class="pb-5"><b>CSS</b></h4>
+                                    <h3 class="pb-5"><b>CSS</b></h3>
                                     <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
                                 </div>
 
                                 <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                     <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
-                                    <h4 class="pb-3"><b>Bootstrap</b></h4>
+                                    <h3 class="pb-3"><b>Bootstrap</b></h3>
                                     <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
                                 </div>
                                                 
                                 <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                                     <i class="fa-brands fa-git-alt fa-4x" aria-hidden="true"></i>
-                                    <h4 class="pb-3"><b>Git & GitHub</b></h4>
+                                    <h3 class="pb-3"><b>Git & GitHub</b></h3>
                                     <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on GitHub</p>                    
                                 </div>                          
                             </div>
@@ -98,7 +99,7 @@
 
                     <!--Desktop display of dynamic skills-->
                     <div class="row d-none" id="dynamicSkills">
-                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
+                        <div class="skill-item col-8 col-md-4 text-center h-100 p-3" id="firstExpandedSkill" tabindex="-1">
                             <i class="fa-brands fa-css3-alt fa-4x" aria-hidden="true"></i>
                             <h4 class="pb-5"><b>CSS</b></h4>
                             <p>Building polished maintainable page designs using flexbox grid and component based styling</p>
@@ -107,7 +108,7 @@
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
                             <i class="fa-brands fa-bootstrap fa-4x" aria-hidden="true"></i>
                             <h4 class="pb-3"><b>Bootstrap</b></h4>
-                            <p>Creating responsive webpages using Bootstrap 3 4 and 5 using utility classes for rapid development</p>
+                            <p>Creating responsive webpages with Bootstrap 3 4 and 5 using utility classes for rapid development</p>
                         </div>
                                         
                         <div class="skill-item col-8 col-md-4 text-center h-100 p-3">
@@ -116,7 +117,7 @@
                             <p>Maintaining version control workflows with Git including branching strategies pull requests and collaborative development on GitHub</p>                    
                         </div> 
                     </div>
-                    <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills" aria-expanded="false">See more</button>
+                    <button class="btn btn-success btn-sm d-none d-md-flex ms-1 ms-md-5" id="toggleMoreSkills" aria-expanded="false" aria-controls="skills">See more</button>
 
                 </div>
             </section>
@@ -173,7 +174,7 @@
 
         <section id="contact">    
             <div class="container-fluid py-5 bg-light">
-                <h2 class="ps-4 ps-md-5 pb-4"><b>Get in touch</b></h2>
+                <h2 class="ps-4 ps-md-5 pb-4"><b>Get In Touch</b></h2>
 
                 <!--pc viewport contacts-->
                 <ul class="list-unstyled gap-4 contact-info d-none d-lg-flex  ms-5">
@@ -197,9 +198,10 @@
 
         <footer class="bg-light">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+            <p class="text-dark me-5 text-end"><small id="copyrightText"></small></p>
             <a class="ms-5" id="back-to-top" href="#top">Back to top</a>
 
-            <p class="text-secondary me-5 text-end"><small id="copyrightText"></small></p>
         </footer>
         <script src="src/seeMoreSkillsButton.js"></script>
         <script src="src/copyrightYear.js"></script>
