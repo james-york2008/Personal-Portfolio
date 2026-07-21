@@ -54,6 +54,11 @@ This repository contains my personal frontend developer portfolio, designed to h
 - Reworked an old `h4 -> h5 -> h6` heading structure to a more accessible `h1 -> h2 -> h3`
 - Accidentally edited a Bootstrap CDN link using global multi cursor editing and fixed it by pulling the original link from the GitHub repository
 
+### Accessibility Audit
+- Confirmed functional keyboard navigation throughout the site
+- Replaced an old `h1 -> h2 -> h4 -> h3` heading structure with a more logical `h1 -> h2 -> h3`
+- Updated the text color of the copyright tag to maintain a color contrast ratio of at least `4.5:1` on all text
+
 ## Potential Future Improvements:
 - Add project filtering
 - Introduce a dark mode

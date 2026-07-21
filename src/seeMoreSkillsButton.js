@@ -1,18 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('toggleMoreSkills')
-    const skills = document.getElementById('dynamicSkills')
-    
-    btn.addEventListener('click', () => {
-        btn.ariaExpanded === true
-        ? btn.ariaExpanded = false
-        : btn.ariaExpanded = true
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("toggleMoreSkills")
+    const skills = document.getElementById("dynamicSkills")
+    const firstExpandedSkill = document.getElementById("firstExpandedSkill")
 
-        const isHidden = skills.classList.toggle('d-none')
-        btn.setAttribute('aria-hidden', (!isHidden).toString())
-        btn.textContent = isHidden ?'See more' :'See less'
+    btn.addEventListener("click", () => {
+        const isExpanded = btn.getAttribute("aria-expanded") === "true"
+        btn.setAttribute("aria-hidden", (isExpanded).toString())
         
-        btn.classList.toggle('btn-success')
-        btn.classList.toggle('btn-danger')
+        const isHidden = skills.classList.toggle("d-none")
+        if (!isHidden) {
+            firstExpandedSkill.focus()
+        }
+
+        btn.textContent = isHidden 
+            ? "See more" 
+            : "See less"
+        
+        btn.classList.toggle("btn-success")
+        btn.classList.toggle("btn-danger")
     })
 })
 
